@@ -232,7 +232,84 @@ function handleSubmit(e) {
   }, 2200);
 }
 
-// ── Smooth anchor scroll ───────────────────────────────────
+// ── Data Ingestion Module ──────────────────────────────────
+(function initIngestion() {
+  const section = document.querySelector('.ingestion-section');
+  if (!section) return;
+
+  let started = false;
+
+  // Counter animation
+  function animateCounter(el, target, suffix, duration) {
+    const start = performance.now();
+    const update = (now) => {
+      const t = Math.min((now - start) / duration, 1);
+      const ease = 1 - Math.pow(1 - t, 3);
+      const val = Math.floor(ease * target);
+      el.textContent = val.toLocaleString() + (suffix || '');
+      if (t < 1) requestAnimationFrame(update);
+    };
+    requestAnimationFrame(update);
+  }
+
+  // Live data feed
+  const feedTypes = [
+    { cls: 'ft-doc', label: 'DOC', msgs: ['folio_judicial_2024.pdf', 'contrato_cesion_derechos.docx', 'acta_audiencia_0312.pdf', 'oficio_juzgado_15.doc', 'resolucion_SNS_2024.pdf', 'recurso_apelacion_v2.pdf'] },
+    { cls: 'ft-aud', label: 'AUD', msgs: ['grabacion_audiencia_01.mp3', 'interceptacion_tel_2024.wav', 'declaracion_testigo.m4a', 'audio_whatsapp_chain.ogg'] },
+    { cls: 'ft-vid', label: 'VID', msgs: ['camara_seg_edificio.mp4', 'videoconferencia_junta.mov', 'registro_cctv_0422.mp4'] },
+    { cls: 'ft-meta', label: 'META', msgs: ['metadata_chain_custody.json', 'geolocalizacion_dispositivo.xml', 'timestamps_digital.log', 'hash_verification.sha256'] },
+  ];
+
+  function addFeedLine() {
+    const feed = document.getElementById('dataFeed');
+    if (!feed) return;
+    const type = feedTypes[Math.floor(Math.random() * feedTypes.length)];
+    const msg = type.msgs[Math.floor(Math.random() * type.msgs.length)];
+    const hash = Math.random().toString(16).slice(2, 8).toUpperCase();
+    const div = document.createElement('div');
+    div.className = 'feed-line';
+    div.innerHTML = `<span class="feed-hash">#${hash}</span><span class="feed-type ${type.cls}">${type.label}</span><span class="feed-txt">${msg}</span>`;
+    feed.appendChild(div);
+    // Keep only last 20 lines
+    while (feed.children.length > 20) feed.removeChild(feed.firstChild);
+  }
+
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting && !started) {
+        started = true;
+        // Animate counters
+        const cDocs = document.getElementById('ctr-docs');
+        const cAudio = document.getElementById('ctr-audio');
+        const cEntities = document.getElementById('ctr-entities');
+        const cRisk = document.getElementById('ctr-risk');
+        if (cDocs) animateCounter(cDocs, 1247832, '', 3000);
+        if (cAudio) { setTimeout(() => animateCounter(cAudio, 340, 'h', 2500), 400); }
+        if (cEntities) { setTimeout(() => animateCounter(cEntities, 4891, '', 2800), 200); }
+        if (cRisk) {
+          setTimeout(() => {
+            const risks = ['BAJO', 'MEDIO', 'ALTO'];
+            const colors = ['#66bb6a', '#ffd54f', '#ff7043'];
+            let i = 0;
+            const cycle = setInterval(() => {
+              cRisk.textContent = risks[i % 3];
+              cRisk.style.color = colors[i % 3];
+              i++;
+              if (i >= 6) { clearInterval(cycle); cRisk.textContent = 'BAJO'; cRisk.style.color = '#66bb6a'; }
+            }, 300);
+          }, 1000);
+        }
+        // Start feed
+        const feedInterval = setInterval(addFeedLine, 600);
+        // Seed initial lines
+        for (let i = 0; i < 6; i++) setTimeout(addFeedLine, i * 80);
+      }
+    });
+  }, { threshold: 0.25 });
+
+  obs.observe(section);
+})();
+
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
     const target = document.querySelector(a.getAttribute('href'));
