@@ -35,12 +35,12 @@
         const dy = nodes[i].y - nodes[j].y;
         const d = Math.sqrt(dx * dx + dy * dy);
         if (d < MAX_DIST) {
-          const alpha = (1 - d / MAX_DIST) * 0.35;
+          const alpha = (1 - d / MAX_DIST) * 0.55;
           ctx.beginPath();
           ctx.moveTo(nodes[i].x, nodes[i].y);
           ctx.lineTo(nodes[j].x, nodes[j].y);
-          ctx.strokeStyle = `rgba(21,101,192,${alpha})`;
-          ctx.lineWidth = 0.6;
+          ctx.strokeStyle = `rgba(33,150,243,${alpha})`;
+          ctx.lineWidth = 0.8;
           ctx.stroke();
         }
       }
@@ -49,7 +49,7 @@
     nodes.forEach(n => {
       ctx.beginPath();
       ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
-      ctx.fillStyle = 'rgba(0,170,255,0.5)';
+      ctx.fillStyle = 'rgba(0,188,212,0.7)';
       ctx.fill();
     });
     requestAnimationFrame(draw);
