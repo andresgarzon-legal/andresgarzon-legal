@@ -3,37 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Andrés Garzón · Inteligencia Híbrida para la Defensa de Alto Perfil</title>
+  <title>Andrés Garzón · Abogado Penalista · Inteligencia Híbrida para la Defensa de Alto Perfil</title>
   <meta name="description" content="Fusionamos la maestría de abogados de primera línea con la potencia de Agentes de IA. Resolvemos crisis complejas mediante el análisis masivo de datos y estrategia legal disruptiva." />
-  <meta property="og:title" content="Andrés Garzón Legal · LegalTech de Vanguardia" />
-  <meta property="og:description" content="Gestión de crisis de alto perfil con inteligencia híbrida: abogados senior + agentes de IA especializados." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- Cursor glow -->
   <div class="cursor-glow" id="cursorGlow"></div>
-
-  <!-- Neural network canvas -->
   <canvas id="neural-canvas"></canvas>
 
-  <!-- ═══ NAVIGATION ═══ -->
+  <!-- ═══ NAV ═══ -->
   <nav id="mainNav">
     <div class="container">
       <div class="nav-inner">
         <a href="#" class="nav-logo">
-          <span class="logo-name">Andrés Garzón</span>
-          <span class="logo-sub">// Legal · AI · Strategy</span>
+          <img src="logo.png" alt="andresgarzon.legal" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="nav-logo-text" style="display:none">
+            <span class="logo-name">Andrés Garzón</span>
+            <span class="logo-sub">// Legal · AI · Strategy</span>
+          </div>
         </a>
         <ul class="nav-links" id="navLinks">
           <li><a href="#crisis">Crisis</a></li>
           <li><a href="#equipo">Equipo Híbrido</a></li>
           <li><a href="#tecnologia">Tecnología</a></li>
+          <li><a href="#medios">En los Medios</a></li>
           <li><a href="#contacto" class="nav-cta">Activar Protocolo</a></li>
         </ul>
-        <div class="nav-burger" id="burger" aria-label="Menú">
-          <span></span><span></span><span></span>
-        </div>
+        <div class="nav-burger" id="burger"><span></span><span></span><span></span></div>
       </div>
     </div>
   </nav>
@@ -43,11 +40,10 @@
     <div class="container">
       <div class="hero-inner">
 
-        <!-- Left: Copy -->
         <div class="hero-copy">
           <div class="hero-badge">
             <span class="pulse-dot"></span>
-            Sistema Operativo · Modo Defensa Activa
+            Sistema Operativo · Defensa Activa
           </div>
           <h1>
             Inteligencia
@@ -80,19 +76,17 @@
           </div>
         </div>
 
-        <!-- Right: Orb visual -->
         <div class="hero-visual">
-          <div class="hero-orb">
-            <div class="orb-ring"></div>
-            <div class="orb-ring"></div>
-            <div class="orb-ring"></div>
-            <div class="orb-core"></div>
+          <div class="hero-photo-wrap">
+            <img src="foto.jpg" alt="Andrés Garzón Roa — Abogado Penalista" onerror="this.outerHTML='<div style=\'width:100%;height:420px;border-radius:12px;background:linear-gradient(135deg,#e8edf5,#dce5f0);display:flex;align-items:center;justify-content:center;font-size:5rem;\'>👨‍⚖️</div>'">
             <div class="hero-data-tags">
               <div class="data-tag"><span class="tag-dot"></span>LEX-ANALYTICS · ACTIVO</div>
-              <div class="data-tag"><span class="tag-dot"></span>PROCESANDO · 2.4M DOCS</div>
-              <div class="data-tag"><span class="tag-dot"></span>VOX-FORENSIC · ONLINE</div>
               <div class="data-tag"><span class="tag-dot"></span>PRUDENTIA-GPT · 98.7%</div>
+              <div class="data-tag"><span class="tag-dot"></span>VOX-FORENSIC · ONLINE</div>
             </div>
+          </div>
+          <div class="hero-logo-badge">
+            <img src="logo.png" alt="andresgarzon.legal" onerror="this.outerHTML='<span style=\'font-family:var(--font-display);font-weight:800;font-size:1.1rem;color:var(--navy);letter-spacing:.02em;\'>andresgarzon.legal</span>'">
           </div>
         </div>
 
@@ -107,7 +101,6 @@
     <div class="container">
       <div class="crisis-grid">
 
-        <!-- Visual: War Room terminal -->
         <div class="crisis-visual reveal">
           <div class="war-room-display">
             <div class="war-room-header">
@@ -117,81 +110,35 @@
               <span class="war-room-title">WAR_ROOM :: PROTOCOLO CRISIS ALPHA</span>
             </div>
             <div class="war-room-body">
-              <div class="war-log-line">
-                <span class="ts">00:00:01</span>
-                <span class="type type-alert">ALERTA</span>
-                <span class="msg">Caso de alto perfil detectado. Activando equipo.</span>
-              </div>
-              <div class="war-log-line">
-                <span class="ts">00:00:03</span>
-                <span class="type type-exec">EXEC</span>
-                <span class="msg">LEX-ANALYTICS ingesta 1.2M folios del expediente...</span>
-              </div>
-              <div class="war-log-line">
-                <span class="ts">00:00:07</span>
-                <span class="type type-info">INFO</span>
-                <span class="msg">3 contradicciones críticas identificadas en prueba documental.</span>
-              </div>
-              <div class="war-log-line">
-                <span class="ts">00:00:12</span>
-                <span class="type type-exec">EXEC</span>
-                <span class="msg">PRUDENTIA-GPT cruzando jurisprudencia · 847 fallos similares.</span>
-              </div>
-              <div class="war-log-line">
-                <span class="ts">00:00:19</span>
-                <span class="type type-ok">RESULT</span>
-                <span class="msg">Tasa de éxito estimada: 87.4% · Estrategia de defensa lista.</span>
-              </div>
-              <div class="war-log-line">
-                <span class="ts">00:00:24</span>
-                <span class="type type-exec">EXEC</span>
-                <span class="msg">VOX-FORENSIC analizando 340h audio · 12 patrones críticos.</span>
-              </div>
-              <div class="war-log-line">
-                <span class="ts">00:00:31</span>
-                <span class="type type-ok">ACTIVO</span>
-                <span class="msg">Equipo senior briefed. Defensa operativa en 60 minutos.</span>
-              </div>
+              <div class="war-log-line"><span class="ts">00:00:01</span><span class="type type-alert">ALERTA</span><span class="msg">Caso alto perfil detectado. Activando equipo.</span></div>
+              <div class="war-log-line"><span class="ts">00:00:03</span><span class="type type-exec">EXEC</span><span class="msg">LEX-ANALYTICS ingesta 1.2M folios del expediente...</span></div>
+              <div class="war-log-line"><span class="ts">00:00:07</span><span class="type type-info">INFO</span><span class="msg">3 contradicciones críticas en prueba documental.</span></div>
+              <div class="war-log-line"><span class="ts">00:00:12</span><span class="type type-exec">EXEC</span><span class="msg">PRUDENTIA-GPT cruzando jurisprudencia · 847 fallos.</span></div>
+              <div class="war-log-line"><span class="ts">00:00:19</span><span class="type type-ok">RESULT</span><span class="msg">Tasa de éxito estimada: 87.4% · Estrategia lista.</span></div>
+              <div class="war-log-line"><span class="ts">00:00:24</span><span class="type type-exec">EXEC</span><span class="msg">VOX-FORENSIC · 340h audio · 12 patrones críticos.</span></div>
+              <div class="war-log-line"><span class="ts">00:00:31</span><span class="type type-ok">ACTIVO</span><span class="msg">Defensa operativa. Estrategia en 60 minutos.</span></div>
             </div>
           </div>
         </div>
 
-        <!-- Content -->
-        <div class="crisis-body reveal reveal-delay-2">
+        <div class="reveal reveal-delay-2">
           <span class="overline">Gestión de Crisis</span>
-          <h2 class="section-title">
-            Blindaje Estratégico en Escenarios de
-            <span class="accent">Máxima Presión.</span>
-          </h2>
+          <h2 class="section-title">Blindaje Estratégico en Escenarios de <span class="accent">Máxima Presión.</span></h2>
           <div class="glow-line"></div>
-          <p class="section-lead">
-            En el ojo de la tormenta, la intuición no es suficiente. Abordamos los casos de alto perfil con una metodología de War Room digital: décadas de experiencia en litigio estratégico combinadas con la capacidad de procesar la realidad a velocidad sobrehumana.
-          </p>
-          <p class="section-lead" style="margin-top:16px">
-            No solo defendemos su posición jurídica; <strong style="color:var(--text-primary)">protegemos su libertad, su reputación y su futuro</strong>, anticipando movimientos en el tablero judicial antes de que ocurran.
-          </p>
-
+          <p class="section-lead">En el ojo de la tormenta, la intuición no es suficiente. Abordamos los casos de alto perfil con una metodología de War Room digital: décadas de experiencia en litigio estratégico potenciadas por inteligencia artificial.</p>
+          <p class="section-lead" style="margin-top:14px">No solo defendemos su posición jurídica; <strong style="color:var(--navy)">protegemos su libertad, su reputación y su futuro</strong>, anticipando movimientos antes de que ocurran.</p>
           <div class="crisis-bullets">
             <div class="crisis-bullet">
               <div class="bullet-icon">⚡</div>
-              <div class="bullet-text">
-                <strong>Respuesta Inmediata 24/7</strong>
-                <span>Activación de protocolos de crisis en tiempo real. Sin esperas. El sistema va en línea en minutos.</span>
-              </div>
+              <div class="bullet-text"><strong>Respuesta Inmediata 24/7</strong><span>Activación de protocolos de crisis en tiempo real. Sin esperas.</span></div>
             </div>
             <div class="crisis-bullet">
               <div class="bullet-icon">🛡️</div>
-              <div class="bullet-text">
-                <strong>Contingencia Reputacional</strong>
-                <span>Alineación de la defensa técnica con el impacto mediático. Blindaje total en todas las dimensiones del conflicto.</span>
-              </div>
+              <div class="bullet-text"><strong>Contingencia Reputacional</strong><span>Alineación de la defensa técnica con el impacto mediático.</span></div>
             </div>
             <div class="crisis-bullet">
               <div class="bullet-icon">⚖️</div>
-              <div class="bullet-text">
-                <strong>Litigio de Alta Complejidad</strong>
-                <span>Especialistas en casos donde el riesgo es sistémico y las consecuencias son irreversibles.</span>
-              </div>
+              <div class="bullet-text"><strong>Litigio de Alta Complejidad</strong><span>Especialistas en casos donde el riesgo es sistémico.</span></div>
             </div>
           </div>
         </div>
@@ -202,222 +149,227 @@
 
   <div class="section-divider"></div>
 
-  <!-- ═══ HYBRID TEAM ═══ -->
+  <!-- ═══ AGENTS ═══ -->
   <section class="agents-section" id="equipo">
     <div class="container">
-
       <div class="agents-header reveal">
         <span class="overline">El Equipo Híbrido</span>
         <h2 class="section-title">Abogados Senior + <span class="accent">Agentes de IA.</span></h2>
-        <p class="section-lead">
-          La IA no reemplaza al abogado. La potencia. Cuatro agentes especializados trabajan en paralelo, entregando al equipo humano una capacidad de análisis sin precedentes.
-        </p>
+        <p class="section-lead">La IA no reemplaza al abogado. La potencia. Cuatro agentes especializados trabajan en paralelo, entregando una capacidad de análisis sin precedentes.</p>
       </div>
-
-      <!-- AI Agents grid -->
       <div class="team-grid">
-
         <div class="agent-card reveal">
-          <div class="agent-header">
-            <div class="agent-icon blue">📊</div>
-            <div>
-              <span class="agent-id">AGT-001</span>
-              <div class="agent-name">LEX-ANALYTICS</div>
-              <span class="agent-role">Análisis de Macro-Documentación</span>
-            </div>
-          </div>
-          <p class="agent-desc">Procesa y etiqueta millones de páginas de expedientes en minutos, detectando contradicciones, patrones y evidencias críticas que el ojo humano ignoraría incluso en meses de revisión.</p>
-          <div class="agent-metric">
-            <span>VEL. PROCESO</span>
-            <div class="metric-bar"><div class="metric-fill" style="--fill:.97"></div></div>
-            <span>97%</span>
-          </div>
+          <div class="agent-header"><div class="agent-icon blue">📊</div><div><span class="agent-id">AGT-001</span><div class="agent-name">LEX-ANALYTICS</div><span class="agent-role">Análisis de Macro-Documentación</span></div></div>
+          <p class="agent-desc">Procesa y etiqueta millones de páginas de expedientes en minutos, detectando contradicciones, patrones y evidencias que el ojo humano ignoraría en meses.</p>
+          <div class="agent-metric"><span>VELOCIDAD</span><div class="metric-bar"><div class="metric-fill" style="--fill:.97"></div></div><span>97%</span></div>
         </div>
-
         <div class="agent-card reveal reveal-delay-1">
-          <div class="agent-header">
-            <div class="agent-icon cyan">🎙️</div>
-            <div>
-              <span class="agent-id">AGT-002</span>
-              <div class="agent-name">VOX-FORENSIC</div>
-              <span class="agent-role">Inteligencia Multimodal</span>
-            </div>
-          </div>
-          <p class="agent-desc">Escanea miles de horas de audios y videos, identificando patrones de voz, palabras clave, metadatos y anomalías críticas para la construcción de prueba forense de alta precisión.</p>
-          <div class="agent-metric">
-            <span>COBERTURA</span>
-            <div class="metric-bar"><div class="metric-fill" style="--fill:.94;animation-delay:.3s"></div></div>
-            <span>94%</span>
-          </div>
+          <div class="agent-header"><div class="agent-icon cyan">🎙️</div><div><span class="agent-id">AGT-002</span><div class="agent-name">VOX-FORENSIC</div><span class="agent-role">Inteligencia Multimodal</span></div></div>
+          <p class="agent-desc">Escanea miles de horas de audios y videos, identificando patrones de voz, palabras clave y metadatos críticos para la construcción de prueba forense.</p>
+          <div class="agent-metric"><span>COBERTURA</span><div class="metric-bar"><div class="metric-fill" style="--fill:.94;animation-delay:.3s"></div></div><span>94%</span></div>
         </div>
-
         <div class="agent-card reveal reveal-delay-2">
-          <div class="agent-header">
-            <div class="agent-icon silver">🧠</div>
-            <div>
-              <span class="agent-id">AGT-003</span>
-              <div class="agent-name">PRUDENTIA-GPT</div>
-              <span class="agent-role">Análisis Predictivo Legal</span>
-            </div>
-          </div>
-          <p class="agent-desc">Cruza jurisprudencia histórica con la tendencia actual de los despachos judiciales para calcular probabilidades de éxito, riesgos y escenarios alternativos con máxima precisión.</p>
-          <div class="agent-metric">
-            <span>PRECISIÓN</span>
-            <div class="metric-bar"><div class="metric-fill" style="--fill:.91;animation-delay:.6s"></div></div>
-            <span>91%</span>
-          </div>
+          <div class="agent-header"><div class="agent-icon silver">🧠</div><div><span class="agent-id">AGT-003</span><div class="agent-name">PRUDENTIA-GPT</div><span class="agent-role">Análisis Predictivo Legal</span></div></div>
+          <p class="agent-desc">Cruza jurisprudencia histórica con la tendencia actual de los despachos para calcular probabilidades de éxito, riesgos y escenarios con máxima precisión.</p>
+          <div class="agent-metric"><span>PRECISIÓN</span><div class="metric-bar"><div class="metric-fill" style="--fill:.91;animation-delay:.6s"></div></div><span>91%</span></div>
         </div>
-
         <div class="agent-card reveal reveal-delay-3">
-          <div class="agent-header">
-            <div class="agent-icon gold">✍️</div>
-            <div>
-              <span class="agent-id">AGT-004</span>
-              <div class="agent-name">DOCU-SYNT</div>
-              <span class="agent-role">Automatización de Estructuras</span>
-            </div>
-          </div>
-          <p class="agent-desc">Redacta borradores complejos de alta precisión basados en la estrategia diseñada por nuestros abogados senior. Velocidad de producción documental superior en 40x al método tradicional.</p>
-          <div class="agent-metric">
-            <span>EFICIENCIA</span>
-            <div class="metric-bar"><div class="metric-fill" style="--fill:.99;animation-delay:.9s"></div></div>
-            <span>40× faster</span>
-          </div>
+          <div class="agent-header"><div class="agent-icon gold">✍️</div><div><span class="agent-id">AGT-004</span><div class="agent-name">DOCU-SYNT</div><span class="agent-role">Automatización de Estructuras</span></div></div>
+          <p class="agent-desc">Redacta borradores complejos de alta precisión basados en la estrategia diseñada por nuestros abogados senior. 40× más rápido que el método tradicional.</p>
+          <div class="agent-metric"><span>EFICIENCIA</span><div class="metric-bar"><div class="metric-fill" style="--fill:.99;animation-delay:.9s"></div></div><span>40× faster</span></div>
         </div>
-
       </div>
 
-      <!-- Human team -->
-      <div class="agents-header reveal" style="margin-bottom:32px">
+      <div class="agents-header reveal" style="margin-bottom:28px">
         <span class="overline">El Equipo Humano</span>
-        <h3 class="section-title" style="font-size:clamp(1.4rem,3vw,2rem)">Abogados Senior que <span class="accent">Mandan.</span></h3>
+        <h3 class="section-title" style="font-size:clamp(1.4rem,2.8vw,2rem)">Abogados Senior que <span class="accent">Mandan.</span></h3>
       </div>
       <div class="lawyers-row">
         <div class="lawyer-card reveal">
-          <div class="lawyer-avatar">👨‍⚖️</div>
-          <div class="lawyer-name">Andrés Garzón</div>
+          <div class="lawyer-avatar">
+            <img src="foto.jpg" alt="Andrés Garzón Roa" onerror="this.parentElement.innerHTML='<div class=\'lawyer-avatar-placeholder\'>👨‍⚖️</div>'">
+          </div>
+          <div class="lawyer-name">Andrés Garzón Roa</div>
           <div class="lawyer-title">Socio Director · Penal Estratégico</div>
           <div class="hybrid-tag">⚡ Integrado con PRUDENTIA-GPT</div>
         </div>
         <div class="lawyer-card reveal reveal-delay-2">
-          <div class="lawyer-avatar">👩‍⚖️</div>
+          <div class="lawyer-avatar-placeholder">👩‍⚖️</div>
           <div class="lawyer-name">María Fernanda López</div>
           <div class="lawyer-title">Socia · Litigio Constitucional</div>
           <div class="hybrid-tag">⚡ Integrada con LEX-ANALYTICS</div>
         </div>
         <div class="lawyer-card reveal reveal-delay-4">
-          <div class="lawyer-avatar">👨‍💼</div>
+          <div class="lawyer-avatar-placeholder">👨‍💼</div>
           <div class="lawyer-name">Carlos Mendoza</div>
           <div class="lawyer-title">Socio · Crisis Reputacional</div>
           <div class="hybrid-tag">⚡ Integrado con VOX-FORENSIC</div>
         </div>
       </div>
-
     </div>
   </section>
 
   <div class="section-divider"></div>
 
-  <!-- ═══ LEGALTECH ECOSYSTEM ═══ -->
+  <!-- ═══ TECH ═══ -->
   <section class="tech-section" id="tecnologia">
     <div class="container">
       <div class="tech-header reveal">
         <span class="overline">Ecosistema LegalTech</span>
         <h2 class="section-title">Nuestra <span class="accent">Tecnología.</span></h2>
-        <p class="section-lead">
-          Un ecosistema tecnológico construido para la velocidad, la precisión y la profundidad del análisis legal. No herramientas genéricas — infraestructura diseñada para la defensa de alto impacto.
-        </p>
+        <p class="section-lead">Infraestructura tecnológica diseñada para la velocidad, precisión y profundidad del análisis legal de alto impacto.</p>
       </div>
       <div class="tech-capabilities">
-
         <div class="tech-cap reveal">
-          <div class="tech-cap-num">01</div>
-          <span class="tech-cap-icon">🔍</span>
+          <div class="tech-cap-num">01</div><span class="tech-cap-icon">🔍</span>
           <h3>Análisis Masivo de Documentación</h3>
-          <p>Uso de LLMs de última generación para procesar y encontrar patrones en millones de folios en tiempo récord. Contradicciones, vínculos y evidencias ocultas a simple vista.</p>
-          <div class="tech-tags">
-            <span class="tech-tag">LLM</span>
-            <span class="tech-tag">RAG</span>
-            <span class="tech-tag">NLP</span>
-            <span class="tech-tag">OCR-IA</span>
-          </div>
+          <p>LLMs de última generación para procesar millones de folios en tiempo récord. Contradicciones, vínculos y evidencias ocultas detectadas automáticamente.</p>
+          <div class="tech-tags"><span class="tech-tag">LLM</span><span class="tech-tag">RAG</span><span class="tech-tag">NLP</span><span class="tech-tag">OCR-IA</span></div>
         </div>
-
         <div class="tech-cap reveal reveal-delay-2">
-          <div class="tech-cap-num">02</div>
-          <span class="tech-cap-icon">🎬</span>
+          <div class="tech-cap-num">02</div><span class="tech-cap-icon">🎬</span>
           <h3>Inteligencia Multimodal</h3>
-          <p>Captura, transcripción y análisis forense de volúmenes masivos de audio y video. Identificación de patrones de voz, metadatos y anomalías para la construcción irrefutable de pruebas.</p>
-          <div class="tech-tags">
-            <span class="tech-tag">ASR</span>
-            <span class="tech-tag">CV</span>
-            <span class="tech-tag">FORENSE</span>
-            <span class="tech-tag">METADATOS</span>
-          </div>
+          <p>Captura, transcripción y análisis forense de audio y video masivo. Identificación de patrones de voz y metadatos para construcción irrefutable de pruebas.</p>
+          <div class="tech-tags"><span class="tech-tag">ASR</span><span class="tech-tag">CV</span><span class="tech-tag">FORENSE</span><span class="tech-tag">METADATOS</span></div>
         </div>
-
         <div class="tech-cap reveal reveal-delay-4">
-          <div class="tech-cap-num">03</div>
-          <span class="tech-cap-icon">📡</span>
+          <div class="tech-cap-num">03</div><span class="tech-cap-icon">📡</span>
           <h3>Estrategia Predictiva</h3>
-          <p>Identificación de riesgos y escenarios judiciales mediante procesamiento masivo de datos. Simulaciones de escenario y análisis de tendencias para decidir con información, no intuición.</p>
-          <div class="tech-tags">
-            <span class="tech-tag">ML</span>
-            <span class="tech-tag">JURISPRUDENCIA-AI</span>
-            <span class="tech-tag">PREDICCIÓN</span>
-          </div>
+          <p>Identificación de riesgos y escenarios judiciales mediante procesamiento masivo de datos. Decisiones con información, no intuición.</p>
+          <div class="tech-tags"><span class="tech-tag">ML</span><span class="tech-tag">JURISPRUDENCIA-AI</span><span class="tech-tag">PREDICCIÓN</span></div>
         </div>
-
       </div>
     </div>
   </section>
 
   <div class="section-divider"></div>
 
-  <!-- ═══ CONTACT WAR ROOM ═══ -->
+  <!-- ═══ MEDIA ═══ -->
+  <section class="media-section" id="medios">
+    <div class="container">
+      <div class="media-header reveal">
+        <span class="overline">Presencia Mediática</span>
+        <h2 class="section-title">andresgarzon.legal <span class="accent">en los Medios.</span></h2>
+        <p class="section-lead">Andrés Garzón Roa es referente del derecho penal colombiano. Analista jurídico consultado por los principales medios del país sobre casos de alto impacto, reformas legales y tendencias judiciales.</p>
+      </div>
+      <div class="media-grid">
+        <div class="media-card reveal">
+          <div class="media-outlet">
+            <div class="outlet-icon blue">📻</div>
+            <div><div class="outlet-name">Blu Radio</div><div class="outlet-type">Radio Nacional</div></div>
+          </div>
+          <div class="media-body">
+            <div class="media-date">2023</div>
+            <div class="media-title">Los puntos más polémicos de la reforma a la justicia explicados por abogados penalistas</div>
+            <div class="media-excerpt">Análisis detallado de los aspectos más controvertidos de la reforma a la justicia. Garzón expone las implicaciones para el sistema penal colombiano y los riesgos para la independencia judicial.</div>
+            <a href="https://www.bluradio.com" target="_blank" rel="noopener" class="media-link">Ver cobertura <span class="arrow">→</span></a>
+          </div>
+        </div>
+        <div class="media-card reveal reveal-delay-1">
+          <div class="media-outlet">
+            <div class="outlet-icon red">📰</div>
+            <div><div class="outlet-name">El Tiempo</div><div class="outlet-type">Prensa Nacional</div></div>
+          </div>
+          <div class="media-body">
+            <div class="media-date">2023 - 2024</div>
+            <div class="media-title">Análisis jurídico sobre actuaciones de las Altas Cortes y casos de alto impacto</div>
+            <div class="media-excerpt">Múltiples apariciones como analista jurídico en el diario de mayor circulación del país, aportando perspectivas especializadas sobre procesos judiciales de relevancia nacional.</div>
+            <a href="https://www.eltiempo.com" target="_blank" rel="noopener" class="media-link">Ver cobertura <span class="arrow">→</span></a>
+          </div>
+        </div>
+        <div class="media-card reveal reveal-delay-2">
+          <div class="media-outlet">
+            <div class="outlet-icon green">📡</div>
+            <div><div class="outlet-name">Canal 1</div><div class="outlet-type">Televisión Nacional</div></div>
+          </div>
+          <div class="media-body">
+            <div class="media-date">2023 - 2024</div>
+            <div class="media-title">Defensa técnica en investigaciones de alto perfil vinculadas a entidades del Estado</div>
+            <div class="media-excerpt">Cobertura de su actuación como defensor de alto perfil en casos vinculados a investigaciones de la Superintendencia Nacional de Salud, con análisis en medios televisivos.</div>
+            <a href="https://www.canal1.com.co" target="_blank" rel="noopener" class="media-link">Ver cobertura <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="media-link-row">
+        <div class="media-card reveal">
+          <div class="media-outlet">
+            <div class="outlet-icon blue">🎙️</div>
+            <div><div class="outlet-name">Colmundo Radio</div><div class="outlet-type">Radio</div></div>
+          </div>
+          <div class="media-body">
+            <div class="media-date">2022 - 2024</div>
+            <div class="media-title">Es necesario que parámetros de Altas Cortes sean igualitarios en su aplicación</div>
+            <div class="media-excerpt">Entrevista sobre la necesidad de igualdad en la aplicación de criterios jurídicos por parte de las altas cortes colombianas y sus implicaciones en el Estado de derecho.</div>
+            <a href="https://www.colmundoradio.com.co" target="_blank" rel="noopener" class="media-link">Ver entrevista <span class="arrow">→</span></a>
+          </div>
+        </div>
+        <div class="media-card reveal reveal-delay-2">
+          <div class="media-outlet">
+            <div class="outlet-icon red">📱</div>
+            <div><div class="outlet-name">Emergencias Jurídicas</div><div class="outlet-type">Serie Digital</div></div>
+          </div>
+          <div class="media-body">
+            <div class="media-date">2023 - Presente</div>
+            <div class="media-title">Pin Pon con Andrés Garzón Roa — Serie de Derecho Penal</div>
+            <div class="media-excerpt">Serie educativa donde explica en lenguaje accesible los conceptos fundamentales del derecho penal, sus derechos como ciudadano y cómo actuar ante situaciones de crisis legal.</div>
+            <a href="https://andresgarzon.legal" target="_blank" rel="noopener" class="media-link">Ver serie <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══ CONTACT ═══ -->
   <section class="contact-section" id="contacto">
     <div class="container">
       <div class="contact-grid">
-
-        <!-- Info left -->
         <div class="contact-info reveal">
           <span class="overline">Portal Seguro</span>
           <h2 class="section-title">Activar el<br><span class="accent">Protocolo de Crisis.</span></h2>
           <div class="glow-line"></div>
-          <p class="section-lead">
-            Su situación es única. Su defensa también lo será. Acceda al portal seguro y nuestro equipo activará el análisis inicial en menos de 60 minutos.
-          </p>
-          <div class="contact-promise">
-            <div class="promise-item">
-              <div class="promise-icon">🔒</div>
-              Comunicación cifrada extremo a extremo
+          <p class="section-lead">Su situación es única. Su defensa también. Contáctenos y nuestro equipo activará el análisis inicial en menos de 60 minutos.</p>
+          <div class="contact-info-items">
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <div class="contact-label">Dirección</div>
+                <div class="contact-value">Avenida Carrera 15 # 104-30<br>Oficinas 611-612, Bogotá D.C.</div>
+              </div>
             </div>
-            <div class="promise-item">
-              <div class="promise-icon">⚡</div>
-              Primera evaluación estratégica en 60 minutos
+            <div class="contact-item">
+              <div class="contact-icon">📞</div>
+              <div>
+                <div class="contact-label">Teléfono</div>
+                <div class="contact-value"><a href="tel:+573203430080">+57 320 343 0080</a></div>
+              </div>
             </div>
-            <div class="promise-item">
-              <div class="promise-icon">🌐</div>
-              Disponibilidad operativa 24 horas, 7 días
+            <div class="contact-item">
+              <div class="contact-icon">✉️</div>
+              <div>
+                <div class="contact-label">Correo Seguro</div>
+                <div class="contact-value"><a href="mailto:andres@andresgarzon.legal">andres@andresgarzon.legal</a></div>
+              </div>
             </div>
-            <div class="promise-item">
-              <div class="promise-icon">🛡️</div>
-              Confidencialidad absoluta garantizada
+            <div class="contact-item">
+              <div class="contact-icon">🌐</div>
+              <div>
+                <div class="contact-label">Sitio Web</div>
+                <div class="contact-value"><a href="https://andresgarzon.legal">andresgarzon.legal</a></div>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Form right -->
         <div class="war-room-form reveal reveal-delay-2">
           <div class="form-header">
-            <div class="form-header-left">
-              <div class="form-dots">
-                <span></span><span></span><span></span>
-              </div>
-              <span class="form-status">WAR_ROOM :: INPUT SEGURO</span>
+            <div style="display:flex;align-items:center;gap:10px">
+              <div class="form-dots"><span></span><span></span><span></span></div>
+              <span class="form-status">CANAL SEGURO · INPUT</span>
             </div>
             <div class="form-status-badge">
-              <span style="width:6px;height:6px;border-radius:50%;background:#00d45a;flex-shrink:0"></span>
+              <span style="width:6px;height:6px;border-radius:50%;background:#28c840;flex-shrink:0"></span>
               LÍNEA ENCRIPTADA
             </div>
           </div>
@@ -428,7 +380,7 @@
                 <input type="text" placeholder="Su nombre..." id="nombre" />
               </div>
               <div class="form-group">
-                <label>Teléfono Seguro</label>
+                <label>Teléfono</label>
                 <input type="tel" placeholder="+57 ..." id="telefono" />
               </div>
             </div>
@@ -449,11 +401,10 @@
             </div>
             <div class="form-group">
               <label>Descripción del Escenario</label>
-              <textarea rows="4" placeholder="Describa brevemente la situación. Esta información está protegida bajo confidencialidad absoluta..." id="descripcion"></textarea>
+              <textarea rows="4" placeholder="Describa brevemente la situación. Todo está protegido bajo confidencialidad absoluta..." id="descripcion"></textarea>
             </div>
             <div class="form-security">
-              <span class="lock">🔐</span>
-              Transmisión 256-bit AES encriptada · Sus datos no se comparten con terceros · Protocolo de confidencialidad profesional activo
+              🔐 Transmisión 256-bit AES encriptada · Confidencialidad profesional garantizada
             </div>
             <button class="btn btn-primary btn-submit" id="submitBtn" onclick="handleSubmit(event)">
               Activar Protocolo de Crisis
@@ -461,7 +412,6 @@
             </button>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -470,10 +420,11 @@
   <footer>
     <div class="container">
       <div class="footer-inner">
-        <div class="footer-brand">
-          <div class="logo-name">Andrés Garzón</div>
-          <div class="logo-sub">// Legal · AI · Strategy</div>
-          <p class="footer-desc">Despacho del Futuro. Donde la maestría del litigio se fusiona con la inteligencia artificial para redefinir la defensa legal de alto perfil.</p>
+        <div>
+          <img src="logo.png" class="footer-logo" alt="andresgarzon.legal" onerror="this.style.display='none'">
+          <div class="footer-logo-text">Andrés Garzón</div>
+          <div class="footer-logo-sub">// Legal · AI · Strategy</div>
+          <p class="footer-desc">Despacho del Futuro. Maestría del litigio fusionada con inteligencia artificial para redefinir la defensa legal de alto perfil en Colombia.</p>
         </div>
         <div class="footer-col">
           <h4>Servicios</h4>
@@ -494,23 +445,23 @@
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Legal</h4>
+          <h4>Contacto</h4>
           <ul>
-            <li><a href="#">Confidencialidad</a></li>
-            <li><a href="#">Habeas Data</a></li>
-            <li><a href="#">Términos de Uso</a></li>
-            <li><a href="#">Deontología Profesional</a></li>
+            <li><a href="tel:+573203430080">+57 320 343 0080</a></li>
+            <li><a href="mailto:andres@andresgarzon.legal">andres@andresgarzon.legal</a></li>
+            <li><a href="#">Av. Cra 15 # 104-30</a></li>
+            <li><a href="#">Oficinas 611-612, Bogotá</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
         <div class="footer-legal">
-          © 2025 Andrés Garzón Legal. Todos los derechos reservados.<br>
-          Abogado en ejercicio · Tarjeta Profesional No. XXXXXX-C · Colegio de Abogados de Colombia
+          © 2025 Andrés Garzón Roa. Todos los derechos reservados.<br>
+          Abogado en ejercicio · Tarjeta Profesional · Colegio de Abogados de Colombia
         </div>
         <div class="footer-bottom-right">
           <div class="footer-pill">🔒 SSL Activo</div>
-          <div class="footer-pill">⚡ Sistema Operativo</div>
+          <div class="footer-pill">⚡ Sistema Online</div>
           <div class="footer-pill">🤖 IA v4.2</div>
         </div>
       </div>

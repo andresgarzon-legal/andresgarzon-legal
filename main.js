@@ -39,8 +39,8 @@
           ctx.beginPath();
           ctx.moveTo(nodes[i].x, nodes[i].y);
           ctx.lineTo(nodes[j].x, nodes[j].y);
-          ctx.strokeStyle = `rgba(0,119,255,${alpha})`;
-          ctx.lineWidth = 0.5;
+          ctx.strokeStyle = `rgba(21,101,192,${alpha})`;
+          ctx.lineWidth = 0.6;
           ctx.stroke();
         }
       }
