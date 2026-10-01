@@ -1,0 +1,6 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/poliza", "destination": "/poliza.html" }
+  ]
+}
